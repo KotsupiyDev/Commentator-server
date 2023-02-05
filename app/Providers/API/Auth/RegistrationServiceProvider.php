@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers\Auth;
+namespace App\Providers\API\Auth;
 
 use App\Interfaces\ServiceInterfaces\AuthServiceInterface;
 use App\Services\AuthService;

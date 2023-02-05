@@ -3,6 +3,7 @@
 use App\Http\Controllers\API\Auth\RegistrationController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\API\Auth\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::post('/registration', [RegistrationController::class, 'index']);
+Route::post('/login', [LoginController::class, 'index']);
