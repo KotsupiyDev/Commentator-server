@@ -18,7 +18,7 @@ class RegistrationController extends Controller
     {
         $userDto = UserDTO::from($request->all());
 
-        $response = $this->service->registration($userDto);
+        $response = $this->service->registerUser($userDto);
 
         return response()->json($response);
     }
